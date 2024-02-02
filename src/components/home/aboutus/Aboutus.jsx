@@ -5,77 +5,81 @@ import ImageComponent from "../../UI/ImageComponent";
 import gsap from "gsap";
 
 const Aboutus = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
+  // const [isVisible, setIsVisible] = useState(false);
+  // const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const tl = gsap.timeline();
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
 
-    tl.from(sectionRef.current, {
-      opacity: 0,
-      duration: 1,
-    })
-      .from("#yellow", {
-        xPercent: -100,
-        width: 0,
-        duration: 1.3,
-        delay: 0.1,
-      })
-      .from("#abouttext", {
-        xPercent: 0,
-        y: -40,
-        opacity: 0,
-        stagger: 0.2,
-        duration: 0.4,
-      })
-      .from("#aboutnumbers", {
-        y: 40,
-        stagger: 0.2,
-        duration: 0.4,
-        opacity: 0,
-      })
-      .to(sectionRef.current, {
-        opacity: 1,
-      })
-      .to("#yellow", {
-        xPercent: 0,
-        width: "70%",
-        duration: 1,
-      })
-      .to("#abouttext", {
-        xPercent: 0,
-        opacity: 1,
-        y: 0,
-      })
-      .to("#aboutnumbers", {
-        xPercent: 0,
-        y: -10,
-        stagger: 0.2,
-        opacity: 1,
-        duration: 0.4,
-      });
+  //   tl.from(sectionRef.current, {
+  //     opacity: 0,
+  //     duration: 1,
+  //   })
+  //     .from("#yellow", {
+  //       xPercent: -100,
+  //       width: 0,
+  //       duration: 1.3,
+  //       delay: 0.1,
+  //     })
+  //     .from("#abouttext", {
+  //       xPercent: 0,
+  //       y: -40,
+  //       opacity: 0,
+  //       stagger: 0.2,
+  //       duration: 0.4,
+  //     })
+  //     .from("#aboutnumbers", {
+  //       y: 40,
+  //       stagger: 0.2,
+  //       duration: 0.4,
+  //       opacity: 0,
+  //     })
+  //     .to(sectionRef.current, {
+  //       opacity: 1,
+  //     })
+  //     .to("#yellow", {
+  //       xPercent: 0,
+  //       width: "70%",
+  //       duration: 1,
+  //     })
+  //     .to("#abouttext", {
+  //       xPercent: 0,
+  //       opacity: 1,
+  //       y: 0,
+  //     })
+  //     .to("#aboutnumbers", {
+  //       xPercent: 0,
+  //       y: -10,
+  //       stagger: 0.2,
+  //       opacity: 1,
+  //       duration: 0.4,
+  //     });
 
-    const handleScroll = () => {
-      const rect = sectionRef.current.getBoundingClientRect();
-      const isVisible =
-        rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0;
+  //   const handleScroll = () => {
+  //     const rect = sectionRef.current.getBoundingClientRect();
+  //     const isVisible =
+  //       rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0;
 
-      if (isVisible) {
-        tl.play();
-      } else {
-        tl.reverse();
-      }
-    };
+  //     if (isVisible) {
+  //       tl.play();
+  //     } else {
+  //       tl.reverse();
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="w-full bg-logo relative">
+    <section
+      id="about"
+      // ref={sectionRef}
+      className="w-full bg-logo relative"
+    >
       <div className="w-full h-full flex flex-col py-10 gap-7 md:flex-row md:justify-between md:items-center">
         <div className="relative md:w-[45%]" id="aboutimg">
           <div

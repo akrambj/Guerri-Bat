@@ -67,40 +67,40 @@ const Services = () => {
     },
   ];
 
-  const sectionRef = useRef(null);
+  // const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const tl = gsap.timeline();
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
 
-    tl.from(sectionRef.current, {
-      opacity: 0,
-      duration: 1,
-    }).to(sectionRef.current, {
-      opacity: 1,
-    });
+  //   tl.from(sectionRef.current, {
+  //     opacity: 0,
+  //     duration: 1,
+  //   }).to(sectionRef.current, {
+  //     opacity: 1,
+  //   });
 
-    const handleScroll = () => {
-      const rect = sectionRef.current.getBoundingClientRect();
-      const isVisible =
-        rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0;
+  //   const handleScroll = () => {
+  //     const rect = sectionRef.current.getBoundingClientRect();
+  //     const isVisible =
+  //       rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0;
 
-      if (isVisible) {
-        tl.play();
-      } else {
-        tl.reverse();
-      }
-    };
+  //     if (isVisible) {
+  //       tl.play();
+  //     } else {
+  //       tl.reverse();
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <section
       id="services"
-      ref={sectionRef}
+      // ref={sectionRef}
       className="w-full h-full overflow-hidden py-10 services-bg"
     >
       <div className="w-full h-full flex flex-col items-center justify-center gap-5">
