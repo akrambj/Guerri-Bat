@@ -9,7 +9,9 @@ const SharedLayout = () => {
       <div>
         <Header />
       </div>
-      <CTABtn />
+      <div className="hidden md:block">
+        <CTABtn />
+      </div>
       <div>
         <Outlet />
       </div>
