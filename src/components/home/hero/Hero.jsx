@@ -1,6 +1,6 @@
 import ImageComponent from "../../UI/ImageComponent";
-import phoneBg from "../../../assets/imgs/hero/phone-bg.svg";
-import heroBg from "../../../assets/imgs/hero/heroBg.svg";
+import phoneHerobg from "../../../assets/imgs/hero/phoneHerobg.png";
+import herobG from "../../../assets/imgs/hero/herobG.png";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="hidden md:block absolute top-0 -left-1 w-full -z-10 ">
         <ImageComponent
-          src={phoneBg}
+          src={herobG}
           className={"w-full h-full relative"}
           height={1000}
           width={2000}
@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
       <div className="md:hidden block absolute top-0 left-0 w-full h-screen -z-10 ">
         <ImageComponent
-          src={heroBg}
+          src={phoneHerobg}
           className={"w-full h-full object-cover"}
           height={1000}
           width={2000}

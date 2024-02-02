@@ -3,7 +3,7 @@ import logo from "../../assets/imgs/header/logo.svg";
 import Socials from "../data/Socials";
 import CTABtn from "./CTABtn";
 import ImageComponent from "../UI/ImageComponent";
-import hero from "../../assets/imgs/header/hero.svg";
+import menu from "../../assets/imgs/header/menu.png";
 
 const Header = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -87,7 +87,7 @@ const Header = () => {
           >
             <ImageComponent
               hashStr={"L73AS_Qqo{kBy-VukoaMVHo{j[aM"}
-              src={hero}
+              src={menu}
               width={"100%"}
               height={"100%"}
             />
