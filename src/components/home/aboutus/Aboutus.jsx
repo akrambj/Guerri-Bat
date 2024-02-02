@@ -6,6 +6,7 @@ import gsap from "gsap";
 
 const Aboutus = () => {
   const sectionRef = useRef(null);
+  console.log("hey");
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
