@@ -136,7 +136,7 @@ const Aboutus = () => {
           className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-l-[50px] flex items-center justify-center  flex-col gap-2 text-center rounded-tl-[40px] drop-shadow-md `}
         >
           <h4 className="text-2xl font-bold">
-            <AnimatedNumber finalValue={10} isVisible={isVisible} />
+            <AnimatedNumber finalValue={10} />
           </h4>
           <h6>Ans dans L’Industrie</h6>
         </div>
@@ -144,7 +144,7 @@ const Aboutus = () => {
           className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-md flex items-center justify-center  flex-col gap-2 text-center rounded-tr-[40px] drop-shadow-md `}
         >
           <h4 className="text-2xl font-bold">
-            <AnimatedNumber finalValue={100} isVisible={isVisible} />
+            <AnimatedNumber finalValue={100} />
           </h4>
           <h6>Ans dans L’Industrie</h6>
         </div>
@@ -160,7 +160,7 @@ const Aboutus = () => {
           className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-r-[50px] md:rounded-l-none flex items-center justify-center  flex-col gap-2 text-center rounded-br-[40px] drop-shadow-md `}
         >
           <h4 className="text-2xl font-bold">
-            <AnimatedNumber finalValue={2000} isVisible={isVisible} />
+            <AnimatedNumber finalValue={2000} />
           </h4>
           <h6>Capacité</h6>
         </div>
