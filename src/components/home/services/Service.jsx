@@ -11,8 +11,8 @@ const Service = ({ service, openPopUpHandler }) => {
           // hashStr={service.hash}
           src={service.img}
           alt={service.title}
-          // width={260}
-          // height={200}
+          width={260}
+          height={200}
           className="w-full h-full object-cover rounded-[30px]"
         />
       </div>
