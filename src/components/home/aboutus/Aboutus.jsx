@@ -8,7 +8,7 @@ const Aboutus = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
     tl.from(sectionRef.current, {
       opacity: 0,
@@ -17,15 +17,16 @@ const Aboutus = () => {
       .from("#yellow", {
         xPercent: -100,
         width: 0,
-        duration: 1.3,
+        opacity: 0,
+        duration: 0.5,
         delay: 0.1,
       })
-      .from("#abouttext", {
+      .from("#aboutText", {
         xPercent: 0,
         y: -40,
         opacity: 0,
-        stagger: 0.2,
         duration: 0.4,
+        delay: 0.6,
       })
       .from("#aboutnumbers", {
         y: 40,
@@ -38,10 +39,11 @@ const Aboutus = () => {
       })
       .to("#yellow", {
         xPercent: 0,
+        opacity: 1,
         width: "70%",
         duration: 1,
       })
-      .to("#abouttext", {
+      .to("#aboutText", {
         xPercent: 0,
         opacity: 1,
         y: 0,
@@ -72,16 +74,15 @@ const Aboutus = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
-    <section id="about" ref={sectionRef} className="w-full bg-logo relative">
+    <section id="about" className="w-full h-full  bg-logo relative py-4">
       <div className="w-full h-full flex flex-col py-10 gap-7 md:flex-row md:justify-between md:items-center">
         <div className="relative md:w-[45%]" id="aboutimg">
           <div
-            className="w-[70%] lg:w-[80%] h-[300px] lg:h-[450px] md:w-[90%] xs:h-[350px] 2xs:h-[400px] bg-yellow-primary rounded-tr-[30px] rounded-br-[30px]"
+            className="w-[70%] lg:w-full h-[300px] lg:h-[450px] md:w-[90%] xs:h-[350px] 2xs:h-[400px] bg-yellow-primary rounded-tr-[30px] rounded-br-[30px]"
             id="yellow"
           >
-            <div className="w-full md:w-full lg:w-full h-[240px] lg:h-[400px] xs:h-[300px] 2xs:h-[350px] absolute top-8 lg:top-5 lg:left-40 left-10 rounded-[20px] drop-shadow-xl">
+            <div className="w-full md:w-full lg:ww-full h-[240px] lg:h-[400px] xs:h-[300px] 2xs:h-[350px] absolute top-8 lg:top-5 lg:left-40 left-10 rounded-[20px] drop-shadow-xl">
               <ImageComponent
                 hashStr="LVLNDGIBt7EL~qr;R+%Lxu9Zxaxu"
                 src={about}
@@ -92,9 +93,10 @@ const Aboutus = () => {
             </div>
           </div>
         </div>
+
         <div
           className="text-center flex flex-col gap-3 md:w-[45%] md:text-left lg:items-start"
-          id="abouttext"
+          id="aboutText"
         >
           <h3 className="text-green-primary uppercase font-black text-3xl lg:text-4xl lg:w-[70%] lg:leading-[40px]">
             qualifiés, passionnés et professionnels
@@ -125,10 +127,10 @@ const Aboutus = () => {
       </div>
       <div
         id="aboutnumbers"
-        className="w-[90%] md:h-[120px] md:rounded-[50px] py-2 rounded-lg h-[300px] bg-white drop-shadow-2xl justify-center gap-2 mx-auto flex items-center flex-wrap"
+        className="w-[90%] aboutNumber md:h-[120px] md:rounded-[50px] py-2 rounded-lg h-[300px] bg-white drop-shadow-2xl justify-center gap-2 mx-auto flex items-center flex-wrap"
       >
         <div
-          className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-l-[50px] flex items-center justify-center  flex-col gap-2 text-center rounded-tl-[40px] drop-shadow-md `}
+          className={`cursor-pointer  text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-l-[50px] flex items-center justify-center  flex-col gap-2 text-center rounded-tl-[40px] drop-shadow-md `}
         >
           <h4 className="text-2xl font-bold">
             <AnimatedNumber finalValue={10} />

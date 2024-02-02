@@ -7,7 +7,7 @@ const Home = () => {
     <main className="w-screen min-h-screen  flex flex-col">
       <Hero />
       <Aboutus />
-      <Services />
+      {/* <Services /> */}
     </main>
   );
 };
