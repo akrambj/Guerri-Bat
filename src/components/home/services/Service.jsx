@@ -7,12 +7,12 @@ const Service = ({ service, openPopUpHandler }) => {
       className="service flex flex-col lg:h-[400px] gap-5 justify-between py-5 bg-white rounded-[30px] px-5 drop-shadow-2xl shadow-md w-[80%] xs:w-[60%] sm:w-[45%] md:w-[40%] lg:w-[30%] xl:w-[22%] cursor-pointer hover:bg-green-primary hover:text-white duration-300"
     >
       <div className="w-full h-[60%]">
-        <ImageComponent
-          hashStr={service.hash}
+        <img
+          // hashStr={service.hash}
           src={service.img}
           alt={service.title}
-          width={260}
-          height={200}
+          // width={260}
+          // height={200}
           className="w-full h-full object-cover rounded-[30px]"
         />
       </div>
