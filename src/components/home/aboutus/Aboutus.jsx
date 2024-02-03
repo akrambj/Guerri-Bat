@@ -16,12 +16,13 @@ const Aboutus = () => {
       duration: 1,
     })
       .from("#yellow", {
-        xPercent: -100,
+        x: -100, // Start off the left side of the screen
         width: 0,
         opacity: 0,
         duration: 0.5,
         delay: 0.1,
       })
+      // Continue with other animations...
       .from("#aboutText", {
         xPercent: 0,
         y: -40,
@@ -35,19 +36,18 @@ const Aboutus = () => {
         duration: 0.4,
         opacity: 0,
       })
+      .to("#yellow", {
+        x: 0, // Start off the left side of the screen
+        width: "70%",
+        opacity: 1,
+      })
       .to(sectionRef.current, {
         opacity: 1,
       })
-      .to("#yellow", {
-        xPercent: 0,
-        opacity: 1,
-        width: "70%",
-        duration: 1,
-      })
       .to("#aboutText", {
         xPercent: 0,
-        opacity: 1,
         y: 0,
+        opacity: 1,
       })
       .to("#aboutnumbers", {
         xPercent: 0,
