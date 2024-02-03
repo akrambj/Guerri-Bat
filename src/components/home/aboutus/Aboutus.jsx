@@ -13,13 +13,13 @@ const Aboutus = () => {
 
     tl.from(sectionRef.current, {
       opacity: 0,
-      duration: 1,
+      duration: 0.2,
     })
       .from("#yellow", {
         x: -100, // Start off the left side of the screen
         width: 0,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.2,
         delay: 0.1,
       })
       // Continue with other animations...
@@ -27,13 +27,13 @@ const Aboutus = () => {
         xPercent: 0,
         y: -40,
         opacity: 0,
-        duration: 0.4,
-        delay: 0.6,
+        duration: 0.2,
+        delay: 0.1,
       })
       .from("#aboutnumbers", {
         y: 40,
         stagger: 0.2,
-        duration: 0.4,
+        duration: 0.2,
         opacity: 0,
       })
       .to("#yellow", {
@@ -54,7 +54,7 @@ const Aboutus = () => {
         y: -10,
         stagger: 0.2,
         opacity: 1,
-        duration: 0.4,
+        duration: 0.2,
       });
 
     const handleScroll = () => {
