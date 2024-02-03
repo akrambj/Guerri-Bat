@@ -1,4 +1,5 @@
 import Aboutus from "../components/home/aboutus/Aboutus";
+import Contact from "../components/home/contact/Contact";
 import Hero from "../components/home/hero/Hero";
 import Services from "../components/home/services/Services";
 import Testemonials from "../components/home/testimonials/Testemonials";
@@ -10,6 +11,7 @@ const Home = () => {
       <Aboutus />
       <Services />
       <Testemonials />
+      <Contact />
     </main>
   );
 };
