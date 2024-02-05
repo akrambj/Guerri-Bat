@@ -41,10 +41,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen  min-h-screen md:h-screen py-10 relative z-[99999]"
+      className="w-screen  min-h-screen md:h-screen logoBg2 relative z-[99999]"
     >
-      <div className="w-full h-full flex items-center flex-col lg:flex-row gap-5 md:gap-0">
-        <div className="w-full md:w-[45%] h-full">
+      <div className="w-full h-full flex items-center flex-col lg:flex-row gap-5 md:gap-0 ">
+        <div className="w-full md:w-[45%] h-full ">
           <ImageComponent
             src={contactImg}
             className="w-full h-full object-cover"
