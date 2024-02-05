@@ -87,7 +87,7 @@ const Testemonials = () => {
       ref={testemonialsRef}
       className={`${
         scrolledToTestimonials ? "opacity-100" : "opacity-0"
-      } w-full h-[130vh] overflow-hidden logoBg2 duration-300`}
+      } w-full  overflow-hidden logoBg2 duration-300`}
     >
       <div className="w-full h-full flex flex-col items-center justify-center gap-20 py-10">
         <div
