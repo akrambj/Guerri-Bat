@@ -4,7 +4,7 @@ import { IoStarSharp } from "react-icons/io5";
 
 const Testemonial = ({ testemonial, scrolledToTestimonials }) => {
   return (
-    <div className="testemonial w-[90%] xs:w-[70%] sm:w-[75%] md:w-[40%] lg:w-[30%] xl:w-[22%] flex flex-col justify-between py-10 bg-white drop-shadow-2xl shadow-md  gap-2 rounded-[20px] px-2 cursor-pointer hover:bg-yellow-primary hover:text-white duration-200 transition-all ease-in ">
+    <div className="testemonial  w-[47%]  md:w-[40%] lg:w-[30%] xl:w-[22%] flex flex-col justify-between py-10 bg-white drop-shadow-2xl shadow-md  gap-2 rounded-[20px] px-2 cursor-pointer hover:bg-yellow-primary hover:text-white duration-200 transition-all ease-in ">
       <div
         className={`w-[100px]  ${
           scrolledToTestimonials ? " flip" : ""

@@ -26,7 +26,7 @@ const Hero = () => {
           hashStr={"LF9b8NE4D9-lpjI@Vb-T}bOVKMv%"}
         />
       </div>
-      <div className="h-full flex flex-col items-center justify-end pb-10 text-center gap-3 z-20 lg:gap-16 text-white w-[85%] mx-auto md:mx-0 md:justify-center lg:mt-40 lg:py-20 lg:h-[60%] md:items-start md:text-left lg:w-[50%]  animate-fade-in-up">
+      <div className="h-full flex flex-col items-center justify-end pb-20 text-center gap-3 z-20 lg:gap-16 text-white w-[85%] mx-auto md:mx-0 md:justify-center lg:mt-40 lg:py-20 lg:h-[60%] md:items-start md:text-left lg:w-[50%]  animate-fade-in-up">
         <div className="flex flex-col gap-2 transform translateY-10 md:translateY-20 lg:translateY-30">
           <h1 className="text-xl font-bold uppercase md:text-2xl lg:text-3xl md:w-full lg:w-[90%] xl:w-[70%]  animate-fade-in">
             AVEC VOUS JUSQU’A LA DERNIèRE PIERRE!

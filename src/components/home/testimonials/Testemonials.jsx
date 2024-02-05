@@ -100,7 +100,7 @@ const Testemonials = () => {
             Témoignage
           </h3>
         </div>
-        <div className="w-[80%] mx-auto flex justify-center items-center flex-wrap gap-x-14 gap-y-20 ">
+        <div className="lg:w-[80%] w-[95%] mx-auto flex justify-center items-center flex-wrap gap-2 lg:gap-x-14  gap-y-20 ">
           {testemonials.map((testemonial, index) => (
             <Testemonial
               key={index}
