@@ -34,7 +34,7 @@ const Aboutus = () => {
     <section
       id="about"
       ref={aboutRef}
-      className={`w-full h-[110vh]  relative  ${
+      className={`w-full   relative  ${
         scrolledToAbout ? "opacity-100" : "opacity-0"
       } duration-300`}
     >
