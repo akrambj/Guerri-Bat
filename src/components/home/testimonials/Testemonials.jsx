@@ -55,7 +55,7 @@ const Testemonials = () => {
   return (
     <section
       id="testemonials"
-      className="w-full h-full overflow-hidden bg-logo"
+      className="w-full h-full overflow-hidden logoBg2"
     >
       <div className="w-full h-full flex flex-col items-center justify-center gap-20 py-10">
         <div className="flex flex-col gap-3 text-center">
