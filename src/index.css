@@ -140,7 +140,9 @@ body {
   color: white;
 }
 
-
+.testemonial:hover .profile {
+  background-color: #F2AF37;
+}
 
 .headerBg {
   background-image: url(assets/imgs/header/hero.svg);
@@ -252,6 +254,20 @@ body {
   to {
     width: 70%;
   }
+}
+
+@keyframes flipAnimation {
+  from {
+    transform: rotateY(0deg) ;
+  }
+
+  to {
+    transform: rotateY(180deg) 
+  }
+}
+
+.flip {
+  animation: flipAnimation 1s ease-in-out;
 }
 
 .yellow {

@@ -13,7 +13,7 @@ const Aboutus = () => {
         const aboutSectionTop = aboutRef.current.offsetTop;
         const aboutSectionHeight = aboutRef.current.offsetHeight;
         const isScrolled =
-          window.scrollY >= aboutSectionTop &&
+          window.scrollY >= aboutSectionTop - 300 &&
           window.scrollY <= aboutSectionTop + aboutSectionHeight;
 
         setScrolledToAbout(isScrolled);
@@ -34,7 +34,7 @@ const Aboutus = () => {
     <section
       id="about"
       ref={aboutRef}
-      className={`w-full h-screen  relative  ${
+      className={`w-full h-[110vh]  relative  ${
         scrolledToAbout ? "opacity-100" : "opacity-0"
       } duration-300`}
     >
