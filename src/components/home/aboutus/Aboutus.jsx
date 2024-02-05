@@ -38,7 +38,7 @@ const Aboutus = () => {
         scrolledToAbout ? "opacity-100" : "opacity-0"
       } duration-300`}
     >
-      <div className="w-full h-full flex flex-col gap-10 justify-center">
+      <div className="w-full h-full flex flex-col gap-10 justify-center lg:py-10">
         <div className="w-full  flex flex-col py-10 md:py-0 gap-7 md:flex-row md:justify-between md:items-start ">
           <div className="relative md:w-[45%]" id="aboutimg">
             <div

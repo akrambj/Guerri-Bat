@@ -14,13 +14,10 @@ const PopUp = ({ service, closePopUpHandler, openPopUp }) => {
                 onClick={closePopUpHandler}
               />
             </div>
-            <div className="w-full sm:w-[70%] sm:mx-auto md:w-[50%] drop-shadow-md">
-              <ImageComponent
-                hashStr={service.hash}
+            <div className="w-full h-[60%] sm:w-[70%] sm:mx-auto md:w-[50%] drop-shadow-md">
+              <img
                 src={service.img}
                 alt={service.title}
-                width={400}
-                height={500}
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>

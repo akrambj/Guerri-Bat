@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import serice01 from "../../../assets/imgs/services/service01.jpg";
-import serice02 from "../../../assets/imgs/services/service02.jpg";
-import serice03 from "../../../assets/imgs/services/service03.jpg";
-import serice04 from "../../../assets/imgs/services/service04.jpg";
-import serice05 from "../../../assets/imgs/services/service05.jpg";
-import serice06 from "../../../assets/imgs/services/service06.jpg";
+import serice01 from "../../../assets/imgs/services/service01.webp";
+import serice02 from "../../../assets/imgs/services/service02.webp";
+import serice03 from "../../../assets/imgs/services/service03.webp";
+import serice04 from "../../../assets/imgs/services/service04.webp";
+import serice05 from "../../../assets/imgs/services/service05.webp";
+import serice06 from "../../../assets/imgs/services/service06.webp";
 import Service from "./Service";
 import PopUp from "./PopUp";
 import gsap from "gsap";
@@ -114,7 +114,7 @@ const Services = () => {
             des espaces exceptionnels{" "}et{" "}durables.
           </p>
         </div>
-        <div className="flex items-center justify-center  flex-wrap gap-2 mx-auto lg:gap-x-[3%] xl:gap-x-[10%] gap-y-10 ">
+        <div className="w-full flex  items-center justify-center  flex-wrap gap-2 mx-auto lg:gap-x-[3%] xl:gap-x-[10%] gap-y-10 ">
           {services.map((service, index) => (
             <Service
               key={index}
