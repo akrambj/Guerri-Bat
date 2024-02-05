@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import contactImg from "../../../assets/imgs/contact/contactImg.jpg";
 import emailjs from "@emailjs/browser";
 import { FaCheckCircle } from "react-icons/fa";
@@ -8,6 +8,32 @@ const Contact = () => {
   const form = useRef();
   const [popUp, setPopUp] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [scrolledToContact, setScrolledToContact] = useState(false);
+  const contactRef = useRef();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (contactRef.current) {
+        const contactSectionTop = contactRef.current.offsetTop;
+        const contactSectionHeight = contactRef.current.offsetHeight;
+        const isScrolled =
+          window.scrollY >= contactSectionTop - 300 &&
+          window.scrollY <= contactSectionTop + contactSectionHeight;
+
+        setScrolledToContact(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [contactRef]);
+
+  useEffect(() => {
+    console.log(scrolledToContact);
+  }, [scrolledToContact]);
 
   const sendEmail = (e) => {
     setLoading(true);
@@ -41,15 +67,18 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen  min-h-screen md:h-screen logoBg2 relative z-[99999]"
+      ref={contactRef}
+      className={` ${
+        scrolledToContact ? "opacity-100" : "opacity-0"
+      } duration-300 w-screen  min-h-screen md:h-screen logoBg2 relative`}
     >
-      <div className="w-full h-full flex items-center flex-col lg:flex-row gap-5 md:gap-0 ">
+      <div
+        className={`w-full h-full flex items-center flex-col lg:flex-row gap-5 md:gap-0 ${
+          scrolledToContact ? "about-img" : ""
+        } duration-300 `}
+      >
         <div className="w-full md:w-[45%] h-full ">
-          <ImageComponent
-            src={contactImg}
-            className="w-full h-full object-cover"
-            hashStr="LyKm,_fkV@Rj?^j[RjWBt8oLWBt7"
-          />
+          <img src={contactImg} className="w-full h-full object-cover" />
         </div>
         <div className="w-full md:w-[50%] h-[100%] flex flex-col justify-center gap-5 ">
           <div className="text-center">
@@ -101,7 +130,7 @@ const Contact = () => {
               required
             />
             <button
-              className="bg-green-primary hover:bg-black duration-300 md:w-full text-white font-bold w-[90%]  py-2 rounded-[20px] text-lg"
+              className="z-[99999] bg-green-primary hover:bg-black duration-300 md:w-full text-white font-bold w-[90%]  py-2 rounded-[20px] text-lg"
               type="submit"
               value={"send"}
             >
