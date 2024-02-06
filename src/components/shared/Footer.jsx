@@ -16,16 +16,22 @@ const Footer = () => {
 
   return (
     <footer className="relative w-full  py-5 px-5 md:px-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between  bg-black z-0">
-      <div className="md:w-[20%] md:h-[200px]  flex flex-col gap-3">
+      <div className="md:w-[20%]  md:h-[200px]  flex flex-col gap-3">
         <div className="logo">
-          <img className="h-full w-full object-cover" src={logo} alt="logo" />
+          <img
+            className="w-[60%] h-full md:w-full object-cover"
+            src={logo}
+            alt="logo"
+          />
         </div>
-        <h4 className="text-white">AVEC VOUS JUSQU’A LA DERNIèRE PIERRE!</h4>
+        <h4 className="text-white text-sm md:text-base">
+          AVEC VOUS JUSQU’A LA DERNIèRE PIERRE!
+        </h4>
       </div>
       <div className="md:w-[20%] md:h-[200px] ">
-        <ul className="flex justify-between px-2 items-center md:items-start flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
+        <ul className="flex justify-between  items-center md:items-start flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
           {menuItems.map((menuItemm, index) => (
-            <li key={index}>
+            <li key={index} className="w-[40%]">
               <a
                 className={`${
                   index === selectedLink

@@ -13,12 +13,14 @@ const Service = ({ service, openPopUpHandler }) => {
       </div>
       <div className="w-[90%] mx-auto h-[30%] items-center flex flex-col gap-1  lg:gap-3 text-center">
         <div className="flex flex-col ">
-          <h4 className="text-sm lg:text-xl font-bold">{service.title}</h4>
+          <h4 className="text-[10px] xs:text-sm lg:text-xl font-bold">
+            {service.title}
+          </h4>
           <p className="line-clamp-3 text-[12px] text-[#404040] text">
             {service.desc}
           </p>
         </div>
-        <button className="text-green-primary font-bold border-b-2 btn text-sm lg:text-base">
+        <button className="text-green-primary font-bold border-b-2 btn text-[12px] xs:text-sm lg:text-base">
           EN SAVOIR PLUS{" "}
         </button>
       </div>

@@ -27,9 +27,6 @@ const Aboutus = () => {
     };
   }, [aboutRef]);
 
-  useEffect(() => {
-    console.log(scrolledToAbout);
-  }, [scrolledToAbout]);
   return (
     <section
       id="about"
