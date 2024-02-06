@@ -1,8 +1,10 @@
-const Service = ({ service, openPopUpHandler }) => {
+const Service = ({ service, openPopUpHandler, scrolledToServices }) => {
   return (
     <div
       onClick={openPopUpHandler}
-      className="service w-[47%] lg:w-[20%] hover:bg-green-primary duration-300 cursor-pointer hover:text-white rounded-[30px] h-[270px] lg:h-[360px] drop-shadow-2xl bg-white flex flex-col items-center gap-2 py-2"
+      className={`${
+        scrolledToServices ? "service-animation" : ""
+      } service w-[47%] lg:w-[20%] hover:bg-green-primary duration-300 cursor-pointer hover:text-white rounded-[30px] h-[270px] lg:h-[360px] drop-shadow-2xl bg-white flex flex-col items-center gap-2 py-2`}
     >
       <div className="w-[90%] bg-green-300 relative mx-auto h-[55%] lg:h-[60%]  rounded-[30px]">
         <img

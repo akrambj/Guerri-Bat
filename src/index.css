@@ -218,7 +218,24 @@ body {
   }
 }
 
+
+@keyframes leftSlide {
+  from {
+    transform: translateX(-100);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .aboutnumbers {
+  animation: slideup 1s ease-in-out;
+}
+
+.service-animation {
   animation: slideup 1s ease-in-out;
 }
 

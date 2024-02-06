@@ -4,18 +4,20 @@ import { IoStarSharp } from "react-icons/io5";
 
 const Testemonial = ({ testemonial, scrolledToTestimonials }) => {
   return (
-    <div className="testemonial h-[200px] md:h-auto  w-[47%]  md:w-[40%] lg:w-[30%] xl:w-[22%] flex flex-col justify-center  lg:justify-between lg:py-10 bg-white drop-shadow-2xl shadow-md  gap-2 rounded-[20px] px-2 cursor-pointer hover:bg-yellow-primary hover:text-white duration-200 transition-all ease-in ">
-      <div
-        className={`w-[60px] lg:w-[100px]  ${
-          scrolledToTestimonials ? " flip" : ""
-        }   h-[60px] lg:h-[100px] rounded-full bg-yellow-primary absolute testemonialImg  left-[32%] lg:left-[32%] -top-8 lg:-top-14 border-4 border-yellow-primary transition-all`}
-      >
+    <div className="relative testemonial h-[200px] md:h-auto  w-[47%]  md:w-[40%] lg:w-[30%] xl:w-[22%] flex flex-col justify-center  lg:justify-between lg:py-10 bg-white drop-shadow-2xl shadow-md  gap-2 rounded-[20px] px-2 cursor-pointer hover:bg-yellow-primary hover:text-white duration-200 transition-all ease-in ">
+      <div className="absolute left-0 -top-5 lg:-top-14  w-full h-4 flex justify-center">
         <div
-          className={`   w-full h-full  duration-300 mx-auto flex items-center justify-center bg-green-primary rounded-full`}
+          className={`w-[60px] lg:w-[100px]  ${
+            scrolledToTestimonials ? " flip" : ""
+          }   h-[60px] lg:h-[100px] rounded-full bg-yellow-primary testemonialImg   lg:-top-14 border-4 border-yellow-primary transition-all`}
         >
-          <h2 className="text-white font-bold text-base lg:text-3xl">
-            {testemonial.firstname[0]} . {testemonial.lastname[0]}
-          </h2>
+          <div
+            className={`w-full h-full  duration-300 mx-auto flex items-center justify-center bg-green-primary rounded-full`}
+          >
+            <h2 className="text-white font-bold text-base lg:text-3xl">
+              {testemonial.firstname[0]} . {testemonial.lastname[0]}
+            </h2>
+          </div>
         </div>
       </div>
       <div>

@@ -11,6 +11,28 @@ import PopUp from "./PopUp";
 const Services = () => {
   const [openPopUp, setOpenPopUp] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
+  const [scrolledToServices, setScrolledToServices] = useState(false);
+  const servicesRef = useRef();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (servicesRef.current) {
+        const servicesSectionTop = servicesRef.current.offsetTop;
+        const servicesSectionHeight = servicesRef.current.offsetHeight;
+        const isScrolled =
+          window.scrollY >= servicesSectionTop - 300 &&
+          window.scrollY <= servicesSectionTop + servicesSectionHeight;
+
+        setScrolledToServices(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [servicesRef]);
 
   const openPopUpHandler = (service) => {
     setSelectedService(service);
@@ -66,44 +88,20 @@ const Services = () => {
     },
   ];
 
-  // const sectionRef = useRef(null);
-
-  // useEffect(() => {
-  //   const tl = gsap.timeline();
-
-  //   tl.from(sectionRef.current, {
-  //     opacity: 0,
-  //     duration: 1,
-  //   }).to(sectionRef.current, {
-  //     opacity: 1,
-  //   });
-
-  //   const handleScroll = () => {
-  //     const rect = sectionRef.current.getBoundingClientRect();
-  //     const isVisible =
-  //       rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0;
-
-  //     if (isVisible) {
-  //       tl.play();
-  //     } else {
-  //       tl.reverse();
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   return (
     <section
       id="services"
-      // ref={sectionRef}
-      className="w-full h-full overflow-hidden py-10 services-bg"
+      ref={servicesRef}
+      className={`w-full h-full overflow-hidden py-10 services-bg duration-300 ${
+        scrolledToServices ? "opacity-100" : "opacity-0"
+      }`}
     >
       <div className="w-full h-full flex flex-col items-center justify-center gap-5">
-        <div className="text-center flex flex-col gap-4">
+        <div
+          className={`text-center flex flex-col gap-4  ${
+            scrolledToServices ? "animate-fade-in-up" : ""
+          } duration-300`}
+        >
           <h2 className="text-green-primary text-3xl lg:text-5xl font-black">
             NOS SERVICES
           </h2>
@@ -119,6 +117,7 @@ const Services = () => {
               key={index}
               service={service}
               openPopUpHandler={() => openPopUpHandler(service)}
+              scrolledToServices={scrolledToServices}
             />
           ))}
         </div>
