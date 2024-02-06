@@ -31,10 +31,6 @@ const Contact = () => {
     };
   }, [contactRef]);
 
-  useEffect(() => {
-    console.log(scrolledToContact);
-  }, [scrolledToContact]);
-
   const sendEmail = (e) => {
     setLoading(true);
     e.preventDefault();
@@ -49,7 +45,6 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("submitted");
           setLoading(false);
           setPopUp(true);
           setTimeout(() => {

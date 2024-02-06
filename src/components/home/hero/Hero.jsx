@@ -8,7 +8,7 @@ const Hero = () => {
       id="home"
       className="w-screen h-screen overflow-hidden md:px-40 relative  animate-fade-in"
     >
-      <div className="hidden md:block absolute top-0 -left-1 w-full -z-10 ">
+      <div className="hidden md:block absolute top-0 lg:-top-1 -left-1 w-full -z-10 ">
         <ImageComponent
           src={herobG}
           className={"w-full h-full relative"}
