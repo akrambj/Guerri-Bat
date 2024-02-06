@@ -11,7 +11,7 @@ const Testemonials = () => {
         const testimonialsSectionTop = testemonialsRef.current.offsetTop;
         const testimonialsSectionHeight = testemonialsRef.current.offsetHeight;
         const isScrolled =
-          window.scrollY >= testimonialsSectionTop &&
+          window.scrollY >= testimonialsSectionTop - 300 &&
           window.scrollY <= testimonialsSectionTop + testimonialsSectionHeight;
 
         setScrolledToTestimonials(isScrolled);
