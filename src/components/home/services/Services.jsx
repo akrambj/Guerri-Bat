@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import serice01 from "../../../assets/imgs/services/service01.webp";
-import serice02 from "../../../assets/imgs/services/service02.webp";
-import serice03 from "../../../assets/imgs/services/service03.webp";
-import serice04 from "../../../assets/imgs/services/service04.webp";
-import serice05 from "../../../assets/imgs/services/service05.webp";
-import serice06 from "../../../assets/imgs/services/service06.webp";
+import serice01 from "../../../assets/imgs/services/service01.jpg";
+import serice02 from "../../../assets/imgs/services/service02.jpg";
+import serice03 from "../../../assets/imgs/services/service03.jpg";
+import serice04 from "../../../assets/imgs/services/service04.jpg";
+import serice05 from "../../../assets/imgs/services/service05.jpg";
+import serice06 from "../../../assets/imgs/services/service06.jpg";
 import Service from "./Service";
 import PopUp from "./PopUp";
-import gsap from "gsap";
 
 const Services = () => {
   const [openPopUp, setOpenPopUp] = useState(false);
