@@ -26,19 +26,10 @@ const Testemonials = () => {
   }, [testemonialsRef]);
   const testemonials = [
     {
-      firstname: "Pierre",
-      lastname: "D",
-      testemony:
-        "Guirri-Bat a réalisé notre rêve de maison avec un professionnalisme exceptionnel. Les délais ont été respectés, et la qualité du travail est remarquable. Nous recommandons vivement leurs services.",
-      position: "company position",
-      img: testimonial01,
-      rate: 4,
-    },
-    {
       firstname: "Isabelle",
       lastname: "L",
       testemony:
-        "Nous sommes ravis de la rénovation de notre appartement par Guirri-Bat. L'équipe a été à l'écoute de nos besoins et a su apporter des solutions créatives. Un service impeccable du début à la fin.",
+        "Nous sommes ravis de la rénovation de notre appartement ! L'équipe a été à l'écoute de nos besoins et a su apporter des solutions créatives. Un service impeccable du début à la fin",
       position: "company position",
       img: testimonial01,
       rate: 5,
@@ -47,7 +38,7 @@ const Testemonials = () => {
       firstname: "Nicolas",
       lastname: "Bt",
       testemony:
-        "Guirri-Bat a surpassé nos attentes en termes de construction. Leur équipe compétente et dévouée a géré chaque étape avec professionnalisme. Nous sommes reconnaissants pour leur travail exceptionnel.",
+        "le résultat a surpassé nos attentes ! Leur équipe compétente et dévouée a géré chaque étape avec professionnalisme !",
       position: "company position",
       img: testimonial01,
       rate: 4,
@@ -74,7 +65,7 @@ const Testemonials = () => {
       firstname: "Émilie",
       lastname: "P",
       testemony:
-        "Choisir Guirri-Bat pour la construction de notre maison a été la meilleure décision. Ils ont su combiner efficacité, créativité et respect des délais. Nous sommes ravis du résultat final et les recommandons sans hésitation",
+        "Choisir Guirri-Bat pour la construction de notre maison a été la meilleure décision. Ils ont su combiner efficacité, créativité et respect des délais. Nous sommes ravis du résultat final et les recommandons sans hésitation.",
       position: "company position",
       img: testimonial01,
       rate: 5,
@@ -97,7 +88,7 @@ const Testemonials = () => {
         >
           <h4 className="font-bold text-4xl">Client</h4>
           <h3 className="text-green-primary font-black text-3xl md:text-5xl">
-            Témoignage
+            Témoignages
           </h3>
         </div>
         <div className="lg:w-[80%] w-[95%] mx-auto flex justify-center items-center flex-wrap gap-2 lg:gap-x-14  gap-y-20 ">

@@ -106,9 +106,9 @@ const Services = () => {
             NOS SERVICES
           </h2>
           <p className="text-sm w-[95%] lg:text-lg lg:w-[60%] mx-auto opacity-80">
-            Chez Guerri Bat, nous sommes votre partenaire polyvalent, prêt à
-            répondre à tous vos besoins de construction et de design pour créer
-            des espaces exceptionnels{" "}et{" "}durables.
+            Nous sommes votre partenaire polyvalent, prêt à répondre à tous vos
+            besoins de construction et de design pour créer des espaces
+            exceptionnels et durables.
           </p>
         </div>
         <div className="w-full flex  items-center justify-center  flex-wrap gap-2 mx-auto lg:gap-x-[3%] xl:gap-x-[10%] gap-y-10 ">

@@ -14,8 +14,8 @@ const Testemonial = ({ testemonial, scrolledToTestimonials }) => {
           <div
             className={`w-full h-full  duration-300 mx-auto flex items-center justify-center bg-green-primary rounded-full`}
           >
-            <h2 className="text-white font-bold text-base lg:text-3xl">
-              {testemonial.firstname[0]} . {testemonial.lastname[0]}
+            <h2 className="text-white font-bold text-[10px] lg:text-lg">
+              {testemonial.firstname}
             </h2>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Testemonial = ({ testemonial, scrolledToTestimonials }) => {
       </div>
       <div className="flex flex-col  text-center">
         <h3 className="text-green-primary font-extrabold text-lg">
-          {testemonial.firstname} & {testemonial.lastname}
+          {testemonial.firstname}
         </h3>
         <span className="flex items-center gap-1 justify-center">
           {Array.from({ length: testemonial.rate }, (_, index) => (

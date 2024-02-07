@@ -78,7 +78,7 @@ const Contact = () => {
         <div className="w-full md:w-[50%] h-[100%] flex flex-col justify-center gap-5 ">
           <div className="text-center">
             <h2 className="text-green-primary text-2xl font-black md:text-4xl">
-              CONTACTEZ NOUS
+              CONTACTEZ-NOUS
             </h2>
           </div>
           <form
@@ -89,7 +89,7 @@ const Contact = () => {
             <input
               className="md:w-[45%] w-[45%]   focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
               type="text"
-              placeholder="Le Nom"
+              placeholder="Nom"
               name="first_name"
             />
             <input
@@ -125,7 +125,7 @@ const Contact = () => {
               required
             />
             <button
-              className="z-[99999] bg-green-primary hover:bg-black duration-300 md:w-full text-white font-bold w-[90%]  py-2 rounded-[20px] text-lg"
+              className="z-[99] bg-green-primary hover:bg-black duration-300 md:w-full text-white font-bold w-[90%]  py-2 rounded-[20px] text-lg"
               type="submit"
               value={"send"}
             >

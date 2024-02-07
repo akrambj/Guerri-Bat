@@ -28,8 +28,11 @@ const PopUp = ({ service, closePopUpHandler, openPopUp }) => {
               <p className="opacity-80  h-[60%] lg:h-full  md:overflow-visible  overflow-y-scroll text-[12px] lg:text-base  md:h-[80%] mb-auto  md:text-lg  overflow-clip  2xs:h-[50%] ">
                 {service.desc}
               </p>
-              <button className="bg-green-primary w-[140px] lg:w-[200px] mx-auto md:mx-0 py-1 text-sm lg:py-2 text-white font-bold lg:text-lg rounded-[20px] hover:bg-black duration-300">
-                Contactez-Nous
+              <button
+                onClick={closePopUpHandler}
+                className="bg-green-primary w-[140px] lg:w-[200px] mx-auto md:mx-0 py-1 text-sm lg:py-2 text-white font-bold lg:text-lg rounded-[20px] hover:bg-black duration-300"
+              >
+                <a href="#contact">Contactez-Nous</a>
               </button>
             </div>
           </div>
