@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
       <div className="text-lg text-gray-600 mt-1 text-center text-white">
         &copy; {new Date().getFullYear()} Web média diffusion. Tous droits
-        réservés Réservé.
+        réservés.
       </div>
     </footer>
   );
