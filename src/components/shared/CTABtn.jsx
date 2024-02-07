@@ -26,7 +26,7 @@ const CTABtn = () => {
         >
           <a
             className="text-white capitalize font-black text-sm"
-            href="whatsapp://send?phone=+213777941413"
+            href="whatsapp://send?phone=+33 6 46 12 92 35"
           >
             UN DEVIS<span className="px-1">!</span>
           </a>
