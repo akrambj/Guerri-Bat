@@ -24,12 +24,12 @@ const Footer = () => {
             alt="logo"
           />
         </div>
-        <h4 className="text-white text-sm md:text-base">
-          AVEC VOUS JUSQU’A LA DERNIèRE PIERRE!
+        <h4 className="text-white text-sm md:text-base uppercase">
+          AVEC VOUS JUSQU’A LA DERNIèRE PIERRE <span className="px-2">!</span>
         </h4>
       </div>
-      <div className="md:w-[20%] md:h-[200px] ">
-        <ul className="flex justify-between  items-center md:items-start flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
+      <div className="md:w-[30%]  md:h-[200px] ">
+        <ul className="flex justify-between  items-center  flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
           {menuItems.map((menuItemm, index) => (
             <li key={index} className="w-[40%]">
               <a
@@ -52,6 +52,8 @@ const Footer = () => {
           {Socials.map((social, index) => (
             <li className="" key={index}>
               <a
+                rel="noreferrer"
+                target="_blank"
                 className="text-white text-xl hover:text-green-primary duration-300"
                 href={social.link}
               >
@@ -60,7 +62,6 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <li className="list-none">0612 34 53 78</li>
       </div>
       <div className="md:w-[20%] h-[200px] z-0">
         <iframe

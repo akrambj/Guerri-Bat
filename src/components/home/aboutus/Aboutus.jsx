@@ -65,28 +65,22 @@ const Aboutus = () => {
             <h3 className="text-green-primary uppercase font-black text-3xl lg:text-4xl lg:w-[70%] lg:leading-[40px] ">
               qualifiés, passionnés et professionnels
             </h3>
-            <p className="lg:text-sm w-[90%] mx-auto lg:mx-0 animate-pulse">
-              Bienvenue chez Guerri Bat, votre partenaire de confiance pour tous
-              vos projets de construction dans le sud de la France. Fondée avec
-              une passion durable pour l{"'"}art de bâtir, notre société s{"'"}
-              engage à fournir des solutions de construction innovantes et de
-              qualité.À Guerri Bat, nous comprenons que chaque projet est
-              unique, c{"'"}est pourquoi nous mettons l{"'"}accent sur une
-              approche personnalisée. Notre équipe expérimentée, basée à Cannes,
-              allie expertise technique et créativité pour donner vie à vos
-              idées. Que vous envisagiez une nouvelle construction, une
-              rénovation ou une extension, nous sommes là pour concrétiser vos
-              rêves. Notre engagement envers l{"'"}excellence se reflète dans
-              chaque étape de notre travail, de la conception à la réalisation.
-              Nous sommes fiers de notre réputation en tant que constructeur
-              fiable, offrant des résultats exceptionnels et respectant les
-              délais. Chez Guerri Bat, nous croyons en la construction de
-              relations solides avec nos clients. La transparence, l{"'"}
-              intégrité et la communication ouverte sont au cœur de notre
-              approche. Explorez notre portefeuille diversifié de projets
-              réussis et découvrez comment nous pouvons transformer vos idées en
-              réalité. Nous sommes prêts à être votre partenaire de confiance
-              dans chaque étape de{" "}votre{" "}projet.
+            <p className="lg:text-sm w-[90%] mx-auto lg:mx-0">
+              Fondée avec une passion durable pour l'art de bâtir, notre société
+              s'engage à fournir des solutions de construction innovantes et de
+              qualité. Chez GUIRRI-BAT, nous comprenons que chaque projet est
+              unique, c'est pourquoi nous mettons l'accent sur une approche
+              personnalisée. Notre équipe expérimentée, basée à Cannes, allie
+              expertise technique et créativité pour donner vie à vos idées. Que
+              vous envisagiez une nouvelle construction, une rénovation ou une
+              extension, nous sommes là pour concrétiser vos rêves. Notre
+              engagement envers l'excellence se reflète dans chaque étape de
+              notre travail, de la conception à la réalisation. Nous sommes
+              fiers de notre réputation en tant que constructeur fiable, offrant
+              des résultats exceptionnels et respectant les délais. Nous croyons
+              en la construction de relations solides avec nos clients. La
+              transparence, l'intégrité et la communication ouverte sont au cœur
+              de notre approche
             </p>
           </div>
         </div>
@@ -99,9 +93,9 @@ const Aboutus = () => {
             className={`cursor-pointer  text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-l-[50px] flex items-center justify-center  flex-col gap-2 text-center rounded-tl-[40px] drop-shadow-md `}
           >
             <h4 className="text-2xl font-bold">
-              <AnimatedNumber finalValue={10} />
+              <AnimatedNumber finalValue={15} />
             </h4>
-            <h6>Ans dans L’Industrie</h6>
+            <h6>ANS D’EXPERIENCE</h6>
           </div>
           <div
             className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-md flex items-center justify-center  flex-col gap-2 text-center rounded-tr-[40px] drop-shadow-md `}
@@ -109,7 +103,7 @@ const Aboutus = () => {
             <h4 className="text-2xl font-bold">
               <AnimatedNumber finalValue={100} />
             </h4>
-            <h6>Ans dans L’Industrie</h6>
+            <h6>CLIENTS SATISFAIT</h6>
           </div>
           <div
             className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-md flex items-center justify-center  flex-col gap-2 text-center rounded-bl-[40px] drop-shadow-md `}

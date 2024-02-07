@@ -12,7 +12,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 5) {
+      if (window.scrollY >= 5 && window.scrollY <= 3000) {
         setScrollVersion(true);
       } else {
         setScrollVersion(false);
