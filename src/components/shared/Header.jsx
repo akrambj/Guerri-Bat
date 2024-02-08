@@ -30,8 +30,8 @@ const Header = () => {
     { name: "Accueil", link: "#home" },
     { name: "à Propos", link: "#about" },
     { name: "NOS SERVICES", link: "#services" },
-    { name: "Témoignage", link: "#testemonials" },
-    { name: "Contacts", link: "#contact" },
+    { name: "Témoignages", link: "#testemonials" },
+    { name: "Contact", link: "#contact" },
   ];
 
   const toggleMenu = () => {

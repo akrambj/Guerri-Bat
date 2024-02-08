@@ -9,7 +9,7 @@ const CTABtn = () => {
     heroSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="fixed bottom-10 md:bottom-2  right-3 flex items-center justify-end flex-col  gap-2  z-[9999]">
+    <div className="fixed bottom-10 md:bottom-2  right-3 flex items-center justify-end flex-col-reverse  gap-2  z-[9999]">
       <div
         className={`cursor-pointer hover:bg-white text-white hover:text-[#25D366] duration-300   bg-[#25D366] w-[70px] h-[70px]  flex items-center justify-center rounded-full `}
       >
@@ -32,12 +32,10 @@ const CTABtn = () => {
           </a>
         </div>
       </div>
-      <button
+      <FaArrowAltCircleUp
         onClick={scrollToHero}
-        className="bg-yellow-primary rounded-full hover:bg-white hover:text-yellow-primary duration-300 cursor-pointer drop-shadow-xl w-16 h-16 flex items-center justify-center"
-      >
-        <FaArrowAltCircleUp className="text-4xl" />
-      </button>
+        className="text-4xl text-green-primary cursor-pointer"
+      />
     </div>
   );
 };
