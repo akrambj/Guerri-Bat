@@ -80,25 +80,23 @@ const Testemonials = () => {
         scrolledToTestimonials ? "opacity-100" : "opacity-0"
       } w-full  overflow-hidden logoBg2 duration-300`}
     >
-      <div className="w-full h-full flex flex-col items-center justify-center gap-20 py-10">
+      <div className=" w-full h-full flex flex-col items-center justify-center gap-20 py-10">
         <div
           className={`flex flex-col gap-3 text-center
            ${scrolledToTestimonials ? "animate-fade-in-up" : ""} 
             `}
         >
-          <h4 className="font-bold text-4xl">Client</h4>
           <h3 className="text-green-primary font-black text-3xl md:text-5xl">
             Témoignages
           </h3>
+          <h4 className="font-bold text-4xl">Clients</h4>
         </div>
-        <div className="lg:w-[80%] w-[95%] mx-auto flex justify-center items-center flex-wrap gap-2 lg:gap-x-14  gap-y-20 ">
-          {testemonials.map((testemonial, index) => (
-            <Testemonial
-              key={index}
-              testemonial={testemonial}
-              scrolledToTestimonials={scrolledToTestimonials}
-            />
-          ))}
+        <div className="relative flex items-center justify-center">
+          <div className=" w-[90%] h-[300px] lg:overflow-visible lg:flex-row lg:justify-center lg:h-auto flex flex-wrap flex-col overflow-x-scroll gap-4">
+            {testemonials.map((testimonial, index) => (
+              <Testemonial key={index} testimonial={testimonial} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
