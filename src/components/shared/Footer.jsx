@@ -63,6 +63,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
+          <h5>Mob : 06.46.12.92.35</h5>
         </div>
         <div className="md:w-[20%] h-[200px] z-0">
           <iframe

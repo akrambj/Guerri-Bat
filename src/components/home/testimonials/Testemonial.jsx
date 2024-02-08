@@ -2,43 +2,41 @@ import testemonialCamel01 from "../../../assets/imgs/testemonials/testemonialCam
 import testemonialCamel02 from "../../../assets/imgs/testemonials/testemonialCamel02.svg";
 import { IoStarSharp } from "react-icons/io5";
 
-const Testemonial = ({ testemonial, scrolledToTestimonials }) => {
+const Testemonial = ({ testimonial, scrolledToTestimonials }) => {
   return (
-    <div className="relative testemonial h-[200px] md:h-auto  w-[47%]  md:w-[40%] lg:w-[30%] xl:w-[22%] flex flex-col justify-center  lg:justify-between lg:py-10 bg-white drop-shadow-2xl shadow-md  gap-2 rounded-[20px] px-2 cursor-pointer hover:bg-yellow-primary hover:text-white duration-200 transition-all ease-in ">
-      <div className="absolute left-0 -top-5 lg:-top-14  w-full h-4 flex justify-center">
-        <div
-          className={`w-[60px] lg:w-[100px]  ${
-            scrolledToTestimonials ? " flip" : ""
-          }   h-[60px] lg:h-[100px] rounded-full bg-yellow-primary testemonialImg   lg:-top-14 border-4 border-yellow-primary transition-all`}
-        >
-          <div
-            className={`w-full h-full  duration-300 mx-auto flex items-center justify-center bg-green-primary rounded-full`}
-          >
-            <h2 className="text-white font-bold text-[10px] lg:text-lg">
-              {testemonial.firstname}
+    <div className="w-full cursor-pointer  testimonial hover:bg-green-primary duration-300 hover:text-white rounded-lg drop-shadow-xl lg:w-[20%] h-full bg-white flex flex-col  justify-between items-center px-4 py-5">
+      <div className="lg:hidden w-full flex items-center justify-center">
+        <div className="w-[100px] h-[100px] bg-yellow-primary rounded-full flex items-center justify-center">
+          <div className="flex w-full h-full rounded-full items-center justify-center border-[8px] border-green-primary">
+            <h2 className="text-white font-bold text-lg ">
+              {testimonial.firstname}
             </h2>
           </div>
         </div>
       </div>
-      <div>
-        <div className="flex flex-col gap-2 ">
-          <span className="text-6xl">
-            <img loading="lazy" src={testemonialCamel01} alt="" />
-          </span>
-          <p className="text-center text-sm opacity-80 line-clamp-3">
-            {testemonial.testemony}
-          </p>
-          <span className="flex justify-end ">
-            <img className="" src={testemonialCamel02} alt="" />
-          </span>
+      <div className="hidden  absolute w-full  -top-2  lg:flex items-center justify-center h-[20px]">
+        <div className="w-[80px] h-[80px] bg-yellow-primary rounded-full flex items-center justify-center">
+          <div className="flex w-full h-full rounded-full items-center justify-center border-[8px] border-green-primary">
+            <h2 className="text-white font-bold text-lg lg:text-sm">
+              {testimonial.firstname}
+            </h2>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col  text-center">
-        <h3 className="text-green-primary font-extrabold text-lg">
-          {testemonial.firstname}
-        </h3>
+      <div className="w-full flex flex-col gap-2">
+        <span className="text-6xl">
+          <img loading="lazy" src={testemonialCamel01} alt="" />
+        </span>
+        <p className="text-center text-sm opacity-80 line-clamp-3">
+          {testimonial.testemony}
+        </p>
+        <span className="flex justify-end ">
+          <img className="" src={testemonialCamel02} alt="" />
+        </span>
+      </div>
+      <div className="w-full">
         <span className="flex items-center gap-1 justify-center">
-          {Array.from({ length: testemonial.rate }, (_, index) => (
+          {Array.from({ length: testimonial.rate }, (_, index) => (
             <IoStarSharp
               className="text-yellow-primary stars transition-all"
               key={index}
