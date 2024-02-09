@@ -29,41 +29,43 @@ const Footer = () => {
             AVEC VOUS JUSQU’A LA DERNIèRE PIERRE <span className="px-2">!</span>
           </h4>
         </div>
-        <div className="md:w-[30%]  md:h-[200px] ">
-          <ul className="flex justify-between  items-center  flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
-            {menuItems.map((menuItemm, index) => (
-              <li key={index} className="w-[40%]">
-                <a
-                  className={`${
-                    index === selectedLink
-                      ? "text-yellow-primary font-bold opacity-100"
-                      : "text-white opacity-80"
-                  } text-base hover:text-yellow-primary hover:font-bold duration-300`}
-                  href={menuItemm.link}
-                >
-                  {menuItemm.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="md:w-[20%] md:h-[200px] px-2 flex flex-col gap-3 text-white">
-          <h2 className="font-bold">Suivez-nous</h2>
-          <ul className="flex items-center gap-3">
-            {Socials.map((social, index) => (
-              <li className="" key={index}>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white text-xl hover:text-green-primary duration-300"
-                  href={social.link}
-                >
-                  {social.icon}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <h5>Mob : 06.46.12.92.35</h5>
+        <div className="flex items-center justify-center gap-5">
+          <div className="md:w-[30%] w-[50%]   md:h-[200px] ">
+            <ul className="flex flex-col  flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
+              {menuItems.map((menuItemm, index) => (
+                <li key={index} className="w-full lg:w-[40%]">
+                  <a
+                    className={`${
+                      index === selectedLink
+                        ? "text-yellow-primary font-bold opacity-100"
+                        : "text-white opacity-80"
+                    } text-base hover:text-yellow-primary hover:font-bold duration-300`}
+                    href={menuItemm.link}
+                  >
+                    {menuItemm.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="md:w-[20%] md:h-[200px] px-2 flex flex-col gap-1 text-white">
+            <h5>Mob : 06.46.12.92.35</h5>
+            <h2 className="font-bold">Suivez-nous</h2>
+            <ul className="flex items-center gap-3">
+              {Socials.map((social, index) => (
+                <li className="" key={index}>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    className="text-white text-xl hover:text-green-primary duration-300"
+                    href={social.link}
+                  >
+                    {social.icon}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="md:w-[20%] h-[200px] z-0">
           <iframe

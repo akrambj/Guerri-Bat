@@ -12,7 +12,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 5 && window.scrollY <= 3300) {
+      if (window.scrollY >= 5 && window.scrollY <= 3000) {
         setScrollVersion(true);
       } else {
         setScrollVersion(false);
@@ -41,8 +41,8 @@ const Header = () => {
     <header
       className={`w-screen ${
         scrollVersion && !menuToggle
-          ? "lg:justify-center lg:top-[85%]"
-          : "lg:justify-between"
+          ? "lg:justify-center lg:top-[85%] "
+          : "lg:justify-between flex-row-reverse"
       } duration-300 fixed top-3 left-0 flex items-center  justify-between py-4 px-5   md:px-24 lg:px-40 md:py-10 z-[99]`}
     >
       <div

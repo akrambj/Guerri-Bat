@@ -87,40 +87,40 @@ const Contact = () => {
             className="flex pb-2 justify-center focus-within:border-transparent items-center flex-wrap gap-x-10 gap-y-14  w-full md:w-[60%] mx-auto"
           >
             <input
-              className="md:w-[45%] w-[45%]   focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
+              className="md:w-[45%] w-[45%]   focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-transparent border-b-[#545454]"
               type="text"
               placeholder="Nom"
               name="first_name"
             />
             <input
-              className="md:w-[45%] w-[40%]  focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
+              className="md:w-[45%] w-[40%]  focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-transparent border-b-[#545454]"
               type="text"
               placeholder="Prénom"
               name="last_name"
             />
             <input
-              className="md:w-[45%] w-[40%] focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
+              className="md:w-[45%] w-[40%] focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-transparent border-b-[#545454]"
               type="email"
               placeholder="Email"
               name="user_email"
               required
             />
             <input
-              className="md:w-[45%] w-[40%]  focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
+              className="md:w-[45%] w-[40%]  focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-transparent   border-b-2 border-b-[#545454]"
               type="number"
               placeholder="Téléphone"
               name="phone_number"
               required
             />
             <input
-              className="w-[95%] focus:outline-none focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
+              className="w-[95%] focus:outline-none border-transparent focus:border-green-primary focus:font-bold duration-300 pb-2 placeholder:text-black bg-transparent border-b-2 border-b-[#545454]"
               type="text"
               placeholder="Sujet"
               name="user_subject"
             />
             <textarea
               name="message"
-              className="w-[95%] focus:outline-none focus:border-green-primary focus:font-bold duration-300  placeholder:text-black bg-transparent border-b-2 border-b-[#545454] h-[130px]"
+              className="w-[95%] focus:outline-none border-transparent focus:border-green-primary focus:font-bold duration-300  placeholder:text-black bg-transparent border-b-2 border-b-[#545454] h-[130px]"
               placeholder="Message ...."
               required
             />
