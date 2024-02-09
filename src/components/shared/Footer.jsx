@@ -29,11 +29,11 @@ const Footer = () => {
             AVEC VOUS JUSQU’A LA DERNIèRE PIERRE <span className="px-2">!</span>
           </h4>
         </div>
-        <div className="flex items-center justify-center gap-5">
-          <div className="md:w-[30%] w-[50%]   md:h-[200px] ">
+        <div className="flex items-center justify-center gap-5  lg:justify-between lg:w-[400px] ">
+          <div className="md:w-[30%] w-[50%] lg:w-[60%]  md:h-[200px] ">
             <ul className="flex flex-col  flex-wrap md:flex-nowrap md:flex-col md:justify-center md:gap-2 uppercase ">
               {menuItems.map((menuItemm, index) => (
-                <li key={index} className="w-full lg:w-[40%]">
+                <li key={index} className="w-full">
                   <a
                     className={`${
                       index === selectedLink
@@ -48,7 +48,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="md:w-[20%] md:h-[200px] px-2 flex flex-col gap-1 text-white">
+          <div className="md:w-[100%]   md:h-[200px] px-2 flex flex-col gap-1 text-white lg:items-end">
             <h5>Mob : 06.46.12.92.35</h5>
             <h2 className="font-bold">Suivez-nous</h2>
             <ul className="flex items-center gap-3">

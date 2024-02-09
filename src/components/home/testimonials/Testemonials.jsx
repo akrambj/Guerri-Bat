@@ -104,7 +104,7 @@ const Testemonials = () => {
         </div>
         <div className="bg-red-300"></div>
       </div>
-      <div className="md:hidden">
+      <div className="block md:hidden">
         <Slider items={testemonials} />
       </div>
       <div className="md:flex items-center justify-center flex-wrap w-[80%] mx-auto gap-10 hidden">
