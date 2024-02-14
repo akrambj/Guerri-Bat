@@ -6,7 +6,7 @@ import { IoStarSharp } from "react-icons/io5";
 const Testemonial = ({ testimonial }) => {
   return (
     <div
-      className={` w-[90%]  mx-auto cursor-pointer  testimonial hover:bg-green-primary bg-white duration-300 hover:text-white rounded-lg drop-shadow-xl lg:w-[30%] h-full flex flex-col  justify-between items-center px-4 py-5`}
+      className={` w-[90%] lg:w-[40%]   mx-auto cursor-pointer  testimonial hover:bg-green-primary bg-white duration-300 hover:text-white rounded-lg drop-shadow-xl  h-full flex flex-col  justify-between items-center px-4 py-5`}
     >
       <div className="lg:hidden w-full flex items-center justify-center">
         <div className="w-[100px] h-[100px] bg-yellow-primary rounded-full flex items-center justify-center">
@@ -30,7 +30,7 @@ const Testemonial = ({ testimonial }) => {
         <span className="text-6xl">
           <img loading="lazy" src={testemonialCamel01} alt="" />
         </span>
-        <p className="text-center text-sm opacity-80 line-clamp-3">
+        <p className="text-center text-sm opacity-80 line-clamp-3 lg:line-clamp-none lg:text-lg">
           {testimonial.testemony}
         </p>
         <span className="flex justify-end ">

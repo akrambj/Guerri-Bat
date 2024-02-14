@@ -101,7 +101,7 @@ const Aboutus = () => {
             className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-md flex items-center justify-center  flex-col gap-2 text-center rounded-tr-[40px] drop-shadow-md `}
           >
             <h4 className="text-2xl font-bold">
-              <AnimatedNumber finalValue={100} />
+              <AnimatedNumber finalValue={500} />
             </h4>
             <h6>CLIENTS SATISFAIT</h6>
           </div>
@@ -109,17 +109,17 @@ const Aboutus = () => {
             className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-md flex items-center justify-center  flex-col gap-2 text-center rounded-bl-[40px] drop-shadow-md `}
           >
             <h4 className="text-2xl font-bold">
-              <AnimatedNumber finalValue={230} />
+              <AnimatedNumber finalValue={"1M"} />
             </h4>
-            <h6>Membre d’équipe</h6>
+            <h6>tonne de gravats traité</h6>
           </div>
           <div
             className={`cursor-pointer text-green-primary hover:bg-green-primary duration-300 hover:text-white w-[45%] h-[45%] md:h-full bg-[#F7F7F7] md:w-[24%] md:text-sm md:rounded-r-[50px] md:rounded-l-none flex items-center justify-center  flex-col gap-2 text-center rounded-br-[40px] drop-shadow-md `}
           >
             <h4 className="text-2xl font-bold">
-              <AnimatedNumber finalValue={2000} />
+              <AnimatedNumber finalValue={1000} />
             </h4>
-            <h6>Capacité</h6>
+            <h6>collaborateurs</h6>
           </div>
         </div>
       </div>
