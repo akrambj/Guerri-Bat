@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import contactImg from "../../../assets/imgs/contact/contactImg.jpg";
 import emailjs from "@emailjs/browser";
 import { FaCheckCircle } from "react-icons/fa";
-import ImageComponent from "../../UI/ImageComponent";
 
 const Contact = () => {
   const form = useRef();

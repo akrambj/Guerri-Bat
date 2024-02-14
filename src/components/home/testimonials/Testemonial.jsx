@@ -1,10 +1,9 @@
+/* eslint-disable react/prop-types */
 import testemonialCamel01 from "../../../assets/imgs/testemonials/testemonialCamel01.svg";
 import testemonialCamel02 from "../../../assets/imgs/testemonials/testemonialCamel02.svg";
 import { IoStarSharp } from "react-icons/io5";
-import Slider from "./Slider";
 
-const Testemonial = ({ testimonial, scrolledToTestimonials, isActive }) => {
-  console.log(isActive);
+const Testemonial = ({ testimonial }) => {
   return (
     <div
       className={` w-[90%]  mx-auto cursor-pointer  testimonial hover:bg-green-primary bg-white duration-300 hover:text-white rounded-lg drop-shadow-xl lg:w-[30%] h-full flex flex-col  justify-between items-center px-4 py-5`}

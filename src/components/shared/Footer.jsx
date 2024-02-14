@@ -3,8 +3,7 @@ import logo from "../../assets/imgs/header/logo.svg";
 import Socials from "../data/Socials";
 
 const Footer = () => {
-  const [selectedLink, setSelectedLink] = useState(0);
-  const [loading, setLoading] = useState(false);
+  const [selectedLink] = useState(0);
 
   const menuItems = [
     { name: "Accueil", link: "#home" },
