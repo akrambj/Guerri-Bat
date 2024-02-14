@@ -39,26 +39,11 @@ const Header = () => {
   };
   return (
     <header
-      className={`w-screen ${
-        scrollVersion && !menuToggle
-          ? "lg:justify-center lg:top-[85%] "
-          : "lg:justify-between flex-row-reverse lg:flex-row"
-      } duration-300 fixed top-3 left-0 flex items-center  justify-between py-4 px-5   md:px-24 lg:px-40 md:py-10 z-[99]`}
+      className={`duration-300 absolute top-3 left-0 flex items-center  justify-between py-4 px-5   md:px-24 lg:px-40 md:py-10 z-[99]`}
     >
+      <div className="hidden"></div>
       <div
-        style={{
-          opacity: scrollVersion ? 0.9 : 0,
-        }}
-        className={` backdrop-blur-2xl baclg bg-green-primary drop-shadow-xl  fixed w-[97%] opacity-40  left-[2%] md:w-[45%] py-8 md:left-[28%] rounded-[60px] ${
-          scrollVersion
-            ? "transition-opacity duration-300 ease-in-out"
-            : "opacity-0"
-        }`}
-      ></div>
-      <div
-        className={`logo  ${
-          scrollVersion ? "lg:hidden" : "lg:block"
-        } flex items-center justify-center   w-[65%] xs:w-[50%] md:w-[30%] lg:w-[25%]  relative z-40  duration-300`}
+        className={`logo flex items-center justify-center   w-[65%] xs:w-[50%] md:w-[30%] lg:w-[25%]  relative z-40  duration-300`}
       >
         <img
           className="w-full h-full object-cover duration-300  z-20 lg:cursor-pointer"

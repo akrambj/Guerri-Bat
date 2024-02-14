@@ -104,14 +104,14 @@ const Testemonials = () => {
         </div>
         <div className="bg-red-300"></div>
       </div>
-      <div className="block md:hidden">
+      <div className="">
         <Slider items={testemonials} />
       </div>
-      <div className="md:flex items-center justify-center flex-wrap w-[80%] mx-auto gap-10 hidden">
+      {/* <div className="md:flex items-center justify-center flex-wrap w-[80%] mx-auto gap-10 hidden">
         {testemonials.map((testimonial, index) => (
           <Testemonial key={index} testimonial={testimonial} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
