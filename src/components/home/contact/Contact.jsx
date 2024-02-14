@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import contactImg from "../../../assets/imgs/contact/contactImg.jpg";
 import emailjs from "@emailjs/browser";
-<<<<<<< HEAD
 import { FaCheckCircle } from "react-icons/fa";
-=======
 import {
-  FaCheckCircle,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
@@ -15,7 +12,6 @@ import { FaPhone } from "react-icons/fa6";
 import { FaHouse } from "react-icons/fa6";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
->>>>>>> 1d03618d361d4db458331b346af53d85d8f6f6d4
 
 import ImageComponent from "../../UI/ImageComponent";
 import { IoMailOpen } from "react-icons/io5";
